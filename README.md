@@ -27,7 +27,7 @@
      速度以正為前進，負為後退。左右輪參數(0.7、0.9)為中央基準。移動距離以encoder來做控制。
 
 2.openMV部分
-  以收到之指令完成任務並回傳所需參數。
+  以收到之指令完成任務並回傳所需參數，其openMV內部必須包含tflite file、label text、與main.py。
   (1) line follow: 以find line segment完成，偵測在螢幕下方之直線，並'只回傳一筆資料'。
   (2) tag: 回傳Tx, Ry控制BBcar的重要參數，只回傳一筆資料。
   (3) image classification: 分析螢幕所看到數字，並回傳。
